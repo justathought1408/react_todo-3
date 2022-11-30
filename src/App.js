@@ -27,10 +27,6 @@ function App() {
         <div className="App">
             <Form text={text} setText={setText} array={array} 
                 setArray={setArray} count={count} object={object}  setCount={setCount}/>
-            <Arr array={array} text={text} deleteHandler={deleteHandler} setArray={setArray} setCount={setCount} count={count} compCount={compCount} setCompCount={setCompCount} toggleHandler={toggleHandler}/>
-            {!array.length && <p>Todo List is Empty</p>}
-            {!!compCount && <p>{compCount} completed ToDo's</p>}
-            {!!count && <p>{count} ToDo's</p>}
             {!!count && <button className="delete_all" onClick={() => {
                                 setArray([]);
                                 setCount(0);
@@ -41,6 +37,10 @@ function App() {
                                 setCount(count - ((array.filter((item) => item.isCompleted)).length));
                                 setCompCount(0);
                         }}>delete completed</button>}
+            <Arr array={array} text={text} deleteHandler={deleteHandler} setArray={setArray} setCount={setCount} count={count} compCount={compCount} setCompCount={setCompCount} toggleHandler={toggleHandler}/>
+            {!array.length && <p>Todo List is Empty</p>}
+            {!!compCount && <p>{compCount} completed ToDo's</p>}
+            {!!count && <p>{count} ToDo's</p>}
         </div>
     );
 }

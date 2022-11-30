@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+form {
+  position: relative;
+  left: 9px;
+  display: block;
+  width: 550px;
+  margin: 0 auto;
+}
+
+input {
+  width: 400px;
+  height: 40px;
+  border-radius: 15px;
+  text-indent: 10px;
+  border: 1px solid #000;
+  position: relative;
+  bottom: 4px;
+}
+
+.Item__row {
+  display: flex;
+  margin: 15px auto;
+  width: 500px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid #000;
+  padding: 20px;
+  height: 50px;
+  background-color: lightblue;
+  transition: .3s;
+}
+
+.Item__row_green {
+  display: flex;
+  margin: 15px auto;
+  width: 500px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid #000;
+  padding: 20px;
+  height: 50px;
+  background-color: lightgreen;
+  transition: .3s;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.delete_icon {
+  color: darkred;
+}
+
+.check_icon {
+  color: black;
+  transition: .2s;
+}
+
+.check_icon_green {
+  color: darkgreen;
+  transition: .2s;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 15px;
+  width: 100px;
+  height: 40px;
+}
+
+.add_icon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  right: 1px;
+  top: 2px;
+}
+
+.btn_add {
+  margin: 15px;
+  border-radius: 50%;
+  width: 40px;
+}
+
+.delete_all {
+  margin: 10px;
+}
+
+.delete_completed {
+  width: 150px;
+}
